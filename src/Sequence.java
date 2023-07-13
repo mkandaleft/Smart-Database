@@ -56,7 +56,7 @@ class Sequence {
   void add(String key, SimpleEntry<String, Object> value) {
     // Reserve the "History" keyword for the program
     if (value.getKey().equals("History"))
-      throw new RuntimeException("\"History\" is a reserved keyword. Please use another name.");
+      throw new RuntimeException("\"History\" cannot be used as key."); // "History" is a keyword
       
     if (key == null || key.isEmpty())
       return;

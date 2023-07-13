@@ -13,9 +13,11 @@ public class Tools {
 
   // Displays messages (Smiley faces used for positivity)
   public static void title(String text) {
-    System.out.println("\n\u263A \u263A \u263A \u263A \u263A \u263A \u263A \u263A \u263A \u263A \u263A\n");
-    System.out.println(text);
-    System.out.println("-------------------------------------------");
+    for (int i=0; i<=42; i++) {
+      System.out.print("\u263A");
+    }
+    System.out.println("\n" + text);
+    System.out.println("$$$$$%%%%%$$$$$%%%%%%$$$$$$$%%%%%%%$$$$$$$$\n");
   }                     
   
   // Read the file in the path package

@@ -39,6 +39,9 @@ class HashMap {
   // Add key item pair O(1)
   void add(String key, SimpleEntry<String, Object> value) {
     
+    if (value.getKey().equals("History"))
+      throw new RuntimeException("\"History\" cannot be used as key."); // "History" is a keyword
+      
     if (key == null || key.isEmpty())
       return;
       
@@ -52,7 +55,7 @@ class HashMap {
     }
   }
 
-  // Removes a key O(1)
+  // Removes a key from the database and marks it as "History" O(1)
   void remove(String key) {
 
     SimpleEntry[] temp = this.innerMap.get(key);

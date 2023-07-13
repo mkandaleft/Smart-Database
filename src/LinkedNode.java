@@ -31,7 +31,7 @@ class LinkedNode {
     this.values.add(newValue);
   }
 
-  // "Remove the node by setting the History and clearing the rest of the values
+  // "Removes a key from the database and marks it as "History"
   void remove() {
   
     var prevValues = this.values;

@@ -11,8 +11,9 @@ import java.util.Random;
  * 
  * This smart database will choose between a Sequence ADT implemented with ArrayList
  * and a LinkedHashMap ADT depending on the size of the input. 
- * For inputs below 50 000, the database will use a sequence where each node is an ArrayList for simplicity and a 
- * linked hash map for larger inputs.
+ * For inputs below 50 000, the database will use a sequence where each node is an ArrayList for less
+ * space usage with slower methods and a linked hash map for larger inputs which
+ * uses more space but has faster methods.
  * 
  * The project is composed of the following files:
  * - Main which also containes a testing class
