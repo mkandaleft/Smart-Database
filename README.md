@@ -1,18 +1,17 @@
-## Getting Started
-
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Smart Database
+ 
+Written by Mark Kandaleft
+  
+This smart database will choose between a Sequence ADT implemented with ArrayList
+and a LinkedHashMap ADT depending on the size of the input. 
+For inputs below 50 000, the database will use a sequence where each node is an ArrayList for less
+space usage with slower methods and a linked hash map for larger inputs which
+uses more space but has faster methods.
+  
+The project is composed of the following files:
+ - Main which also containes a testing class
+ - Tools contains method performed on the database
+ - smartDB is the class that will assign either structure
+ - Hashmap and Sequence classes which contain their respective methods
+ - LinkedNode which is used by the sequence class
+ - 3 test files (2 small, 1 large) found under TestFiles
